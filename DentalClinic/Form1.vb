@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Form1
-
+    'PAKYUUUU KA MIKE! Pag na basa mo to pakyuu ka ulit!
     Dim con As New MySqlConnection("server=localhost;username=root;password=;database=dentalclinic")
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
