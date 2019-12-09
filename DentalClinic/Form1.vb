@@ -2,7 +2,10 @@
 
 Public Class Form1
 
+    'Testing Commit
     Dim con As New MySqlConnection("server=localhost;username=root;password=;database=dentalclinic")
+    'Testing Commit
+    'Testing Commit
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtUsername.Text = Nothing Or txtPassword.Text = Nothing Then
