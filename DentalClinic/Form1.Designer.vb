@@ -28,16 +28,16 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.btnLogin = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtUsername
@@ -47,7 +47,7 @@ Partial Class Form1
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.Location = New System.Drawing.Point(47, 9)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(221, 23)
+        Me.txtUsername.Size = New System.Drawing.Size(238, 23)
         Me.txtUsername.TabIndex = 0
         Me.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -103,6 +103,16 @@ Partial Class Form1
         Me.Panel3.Size = New System.Drawing.Size(299, 42)
         Me.Panel3.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.DentalClinic.My.Resources.Resources.user
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(36, 36)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.Control
@@ -121,9 +131,19 @@ Partial Class Form1
         Me.txtPassword.Location = New System.Drawing.Point(47, 10)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.txtPassword.Size = New System.Drawing.Size(221, 26)
+        Me.txtPassword.Size = New System.Drawing.Size(238, 26)
         Me.txtPassword.TabIndex = 0
         Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.DentalClinic.My.Resources.Resources.lock1
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(36, 36)
+        Me.PictureBox2.TabIndex = 11
+        Me.PictureBox2.TabStop = False
         '
         'btnLogin
         '
@@ -139,26 +159,6 @@ Partial Class Form1
         Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "LOGIN"
         Me.btnLogin.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.DentalClinic.My.Resources.Resources.lock1
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(36, 36)
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.DentalClinic.My.Resources.Resources.user
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(36, 36)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -180,10 +180,10 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
